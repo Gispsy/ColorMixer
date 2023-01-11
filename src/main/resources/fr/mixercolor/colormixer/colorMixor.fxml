@@ -4,12 +4,11 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.mixercolor.colormixer.ColorMixerController">
    <children>
-      <Slider fx:id="sldRed" layoutX="36.0" layoutY="229.0" prefHeight="16.0" prefWidth="293.0" />
-      <Slider fx:id="sldGreen" layoutX="36.0" layoutY="294.0" prefHeight="16.0" prefWidth="293.0" />
-      <Slider fx:id="sldBlue" layoutX="36.0" layoutY="356.0" prefHeight="16.0" prefWidth="293.0" />
+      <Slider fx:id="sldRed" layoutX="36.0" layoutY="229.0" max="255.0" onMouseReleased="#moussReleasedRed" prefHeight="16.0" prefWidth="293.0" />
+      <Slider fx:id="sldGreen" layoutX="36.0" layoutY="294.0" max="255.0" onMouseReleased="#moussReleasedGreen" prefHeight="16.0" prefWidth="293.0" />
+      <Slider fx:id="sldBlue" layoutX="36.0" layoutY="356.0" max="255.0" onMouseReleased="#moussReleasedBlue" prefHeight="16.0" prefWidth="293.0" />
       <Label fx:id="lblRed" layoutX="357.0" layoutY="213.0" prefHeight="48.0" prefWidth="220.0" style="-fx-background-color: rgb(255,0,0);" />
       <Label fx:id="lblGreen" layoutX="357.0" layoutY="278.0" prefHeight="48.0" prefWidth="220.0" style="-fx-background-color: rgb(0,255,0);" />
       <Label fx:id="lblBlue" layoutX="357.0" layoutY="340.0" prefHeight="48.0" prefWidth="220.0" style="-fx-background-color: rgb(0,0,255);" />
