@@ -23,8 +23,8 @@ public class ColorMixerController {
 
     //Function
     public void moussReleasedRed(MouseEvent mouseEvent) {
-        sldRed.getValue();
         red = sldRed.getValue();
+        lblRed.setStyle("-fx-background-color: rgb("+red+","+0+","+0+")");
 
         //System.out.println(sldRed.getValue());
         changeStyle();
@@ -32,8 +32,8 @@ public class ColorMixerController {
     }
 
     public void moussReleasedGreen(MouseEvent mouseEvent) {
-        sldGreen.getValue();
         green = sldGreen.getValue();
+        lblGreen.setStyle("-fx-background-color: rgb("+0+","+green+","+0+")");
 
         //System.out.println(sldGreen.getValue());
         changeStyle();
@@ -41,8 +41,8 @@ public class ColorMixerController {
     }
 
     public void moussReleasedBlue(MouseEvent mouseEvent) {
-        sldBlue.getValue();
         blue = sldBlue.getValue();
+        lblBlue.setStyle("-fx-background-color: rgb("+0+","+0+","+blue+")");
 
         //System.out.println(sldBlue.getValue());
         changeStyle();
